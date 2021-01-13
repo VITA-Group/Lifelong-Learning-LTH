@@ -134,10 +134,10 @@ def setup_dataset(args, task_id, train=True, all_test=False):
 
         path_head = args.data
         train_path = os.path.join(path_head, 'cifar10_train.pkl')
-        saved_img_path = os.path.join(path_head, 'cifar10_save.pkl')        
+        saved_img_path = os.path.join(path_head, 'cifar10_save_100.pkl')        
         val_path = os.path.join(path_head, 'cifar10_val.pkl')
         test_path = os.path.join(path_head,'cifar10_test.pkl')
-        unlabel_path = os.path.join(path_head,'cifar10_unlabel_150k.pkl')
+        unlabel_path = os.path.join(path_head,'cifar10_80m_150k.pkl')
 
         if os.path.isfile('npy_files/cifar10_class_order.txt'):
             sequence = np.loadtxt('npy_files/cifar10_class_order.txt')
@@ -166,11 +166,11 @@ def setup_dataset(args, task_id, train=True, all_test=False):
             ])
 
         path_head = args.data
-        train_path = os.path.join(path_head, 'cifar100_train_4500.pkl')
-        saved_img_path = os.path.join(path_head, 'cifar100_train_100.pkl')        
+        train_path = os.path.join(path_head, 'cifar100_train.pkl')
+        saved_img_path = os.path.join(path_head, 'cifar100_save_100.pkl')        
         val_path = os.path.join(path_head, 'cifar100_val.pkl')
         test_path = os.path.join(path_head,'cifar100_test.pkl')
-        unlabel_path = os.path.join(path_head,'cifar100_unlabel_150k.pkl')
+        unlabel_path = os.path.join(path_head,'cifar100_80m_150k.pkl')
 
         if os.path.isfile('npy_files/cifar100_class_order.txt'):
             sequence = np.loadtxt('npy_files/cifar100_class_order.txt')
@@ -384,10 +384,10 @@ def generate_softlogit_unlabel(args, task_id, model, criterion):
 
         path_head = args.data
         train_path = os.path.join(path_head, 'cifar10_train.pkl')
-        saved_img_path = os.path.join(path_head, 'cifar10_save.pkl')        
+        saved_img_path = os.path.join(path_head, 'cifar10_save_100.pkl')        
         val_path = os.path.join(path_head, 'cifar10_val.pkl')
         test_path = os.path.join(path_head,'cifar10_test.pkl')
-        unlabel_path = os.path.join(path_head,'cifar10_unlabel_150k.pkl')
+        unlabel_path = os.path.join(path_head,'cifar10_80m_150k.pkl')
 
         if os.path.isfile('npy_files/cifar10_class_order.txt'):
             sequence = np.loadtxt('npy_files/cifar10_class_order.txt')
@@ -416,11 +416,11 @@ def generate_softlogit_unlabel(args, task_id, model, criterion):
             ])
 
         path_head = args.data
-        train_path = os.path.join(path_head, 'cifar100_train_4500.pkl')
-        saved_img_path = os.path.join(path_head, 'cifar100_train_100.pkl')        
+        train_path = os.path.join(path_head, 'cifar100_train.pkl')
+        saved_img_path = os.path.join(path_head, 'cifar100_save_100.pkl')        
         val_path = os.path.join(path_head, 'cifar100_val.pkl')
         test_path = os.path.join(path_head,'cifar100_test.pkl')
-        unlabel_path = os.path.join(path_head,'cifar100_unlabel_150k.pkl')
+        unlabel_path = os.path.join(path_head,'cifar100_80m_150k.pkl')
 
         if os.path.isfile('npy_files/cifar100_class_order.txt'):
             sequence = np.loadtxt('npy_files/cifar100_class_order.txt')

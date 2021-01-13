@@ -14,19 +14,19 @@ We extend the lottery ticket hypothesis from one-shot task learning to class inc
 
 We modify the iterative magnitude pruning approach and assign the pruning budget to each task based on an heuristic curriculum schedule.
 
-![]()
+![](https://github.com/VITA-Group/Lifelong-Learning-LTH/blob/main/Figs/TD.png)
 
 - **Bottom-Up (BU) Pruning**
 
 To tackle the greedy nature of Top-down pruning method, we propose Bottom-Up pruning. Once the current sparse network is too heavily pruned and has no more capacity for new tasks, BU pruning can make the sparse network to re-grow from the current sparsity.
 
-![]()
+![](https://github.com/VITA-Group/Lifelong-Learning-LTH/blob/main/Figs/BU.png)
 
 ## Experiment Results
 
 class incremental learning with Top-Down pruning and Bottom-Up pruning
 
-![]()
+![](https://github.com/VITA-Group/Lifelong-Learning-LTH/blob/main/Figs/result.png)
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ torchvision
 
 #### Dataset:
 
-We reorganized the CIFAR10, CIFAR100 dataset into an dictionary, where the key is for labels, from 0-9 of CIFAR10 and values are the images. And the unlabel images are randomly sampled from 80 Million Tiny Images dataset, which can be download from [CIL_data](https://www.dropbox.com/sh/hrugy5qb7y80tyl/AAB9THdb7-Kk_I-RIFsL_ywxa?dl=0) 
+We reorganized the CIFAR10, CIFAR100 dataset into a dictionary, {key: value}, where the key is for labels, from 0-9 of CIFAR10 and values are the images. And the unlabel images are sampled from 80 Million Tiny Images dataset, which can be download from [CIL_data](https://www.dropbox.com/sh/hrugy5qb7y80tyl/AAB9THdb7-Kk_I-RIFsL_ywxa?dl=0) 
 
 #### Pretrained models:
 
