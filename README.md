@@ -1,5 +1,11 @@
 # Long Live the Lottery: The Existence of Winning Tickets in Lifelong Learning
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+Code for this paper [Long Live the Lottery: The Existence of Winning Tickets in Lifelong Learning](https://openreview.net/forum?id=LXMSvPmsm0g)
+
+Tianlong Chen, Zhenyu Zhang, Sijia Liu, Shiyu Chang, Zhangyang Wang
+
 #### Dataset:
 
 we use split-CIFAR-10 and unlabel images sampled from 80 Million Tiny Images for training, which can be download from [CIL_data](https://www.dropbox.com/sh/hrugy5qb7y80tyl/AAB9THdb7-Kk_I-RIFsL_ywxa?dl=0) 
