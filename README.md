@@ -69,6 +69,13 @@ python -u test.py --pretrained full_model.pt --state [taskID] # test full model
 ## Citation
 
 ```
-
+@inproceedings{
+	chen2021long,
+	title={Long Live the Lottery: The Existence of Winning Tickets in Lifelong Learning},
+	author={Tianlong Chen and Zhenyu Zhang and Sijia Liu and Shiyu Chang and Zhangyang Wang},
+	booktitle={International Conference on Learning Representations},
+	year={2021},
+	url={https://openreview.net/forum?id=LXMSvPmsm0g}
+}
 ```
 
